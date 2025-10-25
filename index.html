@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HighLow Card Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>HighLow Card Game</h1>
+
+      <div id="scoreboard">
+        <p>Player: <span id="player-score">0</span></p>
+        <p>Dealer: <span id="dealer-score">0</span></p>
+        <p>Round: <span id="round-count">0</span> / 5</p>
+      </div>
+
+      <div id="current-card">
+        <h2>Current Card</h2>
+        <!-- Show the back of the card from the images folder initially -->
+        <img id="card-img" src="images/back.png" alt="Current Card" />
+      </div>
+
+      <div id="guess-section" style="display: none;">
+        <p>Will the next card be <strong>Higher</strong> or <strong>Lower</strong>?</p>
+        <button id="higher-btn">Higher</button>
+        <button id="lower-btn">Lower</button>
+        <button id="quit-btn">Quit Game</button>
+      </div>
+
+      <div id="message"></div>
+
+      <div id="history">
+        <h2>Round History</h2>
+        <ul id="history-list"></ul>
+      </div>
+
+      <div id="start-container">
+        <button id="start-btn">Start Game</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

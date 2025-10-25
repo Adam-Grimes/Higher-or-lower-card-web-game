@@ -1,0 +1,170 @@
+/* Import a casino-style font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+/* Overall page styling */
+body {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(135deg, #013220, #022d17); /* Dark casino table green */
+  color: #f2e6d9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main game container */
+#game-container {
+  max-width: 600px;
+  margin: auto;
+  background: #2e2e2e; /* Dark gray background for contrast */
+  border: 3px solid #d4af37; /* Gold border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #d4af37; /* Gold headings */
+}
+
+/* Scoreboard styling */
+#scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background: #1c1c1c; /* Dark background for scoreboard */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#scoreboard p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+/* Current card area */
+#current-card {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.3em;
+}
+
+#current-card img {
+  width: 120px;
+  height: auto;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+}
+
+/* Guess section */
+#guess-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  padding: 12px 18px;
+  margin: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #d4af37; /* Gold */
+  color: #2e2e2e;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #b58930;
+  transform: scale(1.07);
+}
+
+/* Message display */
+#message {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f2e6d9;
+}
+
+/* History section */
+#history {
+  margin-top: 20px;
+}
+
+#history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.round-item {
+  border-bottom: 1px solid #555;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-card {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 5px;
+  border: 2px solid #d4af37;
+  border-radius: 3px;
+}
+
+/* Arrow and player guess in round history */
+.arrow-container {
+  display: inline-block;
+  text-align: center;
+  margin: 0 12px;
+  vertical-align: middle;
+}
+
+.long-arrow {
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  color: #d4af37;
+}
+
+.player-choice {
+  font-size: 1em;
+  font-weight: bold;
+  color: #f2e6d9;
+}
+
+/* Outcome text placed on the right */
+.outcome-text {
+  margin-left: 20px;
+  font-size: 1.1em;
+  line-height: 2em;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+/* Outcome color coding */
+.winning {
+  color: #2ecc71; /* Bright green */
+}
+
+.losing {
+  color: #e74c3c; /* Casino red */
+}
+
+.draw-outcome {
+  font-size: 0.9em;
+}
+
+
+/* Start button container */
+#start-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
